@@ -21,13 +21,15 @@ export default function Generator() {
 
   return (
     <div className={styles.container}>
-      <input
-        type="text"
-        placeholder="Enter your text here..."
-        value={text}
-        onChange={(event) => setText(event.target.value.trim())}
-        autoFocus
-      />
+      <div className={styles.inputWrapper}>
+        <input
+          type="text"
+          placeholder="Enter your text here..."
+          value={text}
+          onChange={(event) => setText(event.target.value.trim())}
+          autoFocus
+        />
+      </div>
       {qrCodeData && text && <img src={qrCodeData} alt="qr-code" />}
     </div>
   );

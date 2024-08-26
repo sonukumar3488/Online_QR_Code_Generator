@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className={styles.navbar}>
       <p>
         <img alt="logo" src="/logo.png" />
-        QR Generator
+        Online QR Generator
       </p>
     </div>
   );
